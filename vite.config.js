@@ -12,6 +12,17 @@ export default defineConfig({
     vueJsx(),
     VueDevTools(),
   ],
+"version": 2,
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "includeAssets": ["assets/**/*"]
+      }
+    }
+  ]
+  
   build: {
     rollupOptions: {
       external: ['vue-error-boundary'],
