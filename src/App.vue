@@ -3,7 +3,7 @@ import {  RouterView } from 'vue-router'
 import Header from './components/header.vue'
 import Loader from './views/loading-page.vue'
 import { ref } from 'vue';
-import ErrorBoundBro from  'vue-error-boundary'
+
 import icon from '../public/favicon.ico'
 const isLoading = ref(true)
 setTimeout(() => {
@@ -14,13 +14,13 @@ setTimeout(() => {
 <template>
 
   <div class="app">
-    <ErrorBoundBro>
+   
     <div v-if="isLoading"><Loader /></div>
     <div v-else>
       <Header />
       <RouterView />
     </div>
-  </ErrorBoundBro>
+ 
   </div>
 </template>
 <style>
