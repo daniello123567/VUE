@@ -30,7 +30,7 @@ return res.json();})
   <div id="body1">
     <div class="lok" v-if="!Loaded">
      <p>Chill Abeg..</p>
-     <img src="../assets/Walk.gif" alt="">
+     <img src="../assets/walk.gif" alt="">
     </div>
   <div v-if="Loaded" class="repo-info">
      <div><img class='git-logo' src="../assets/github-2.gif" alt=""><h1>{{ data.name }}</h1></div>
