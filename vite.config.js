@@ -22,8 +22,9 @@ export default defineConfig({
   ],
   
   build: {
+    assetsInclude: ['**/*.gif'],
+    assetsDir: '.src/assets',
     rollupOptions: {
-       assetsDir: '.src/assets',
       external: ['vue-error-boundary'],
     },
 
