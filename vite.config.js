@@ -25,6 +25,7 @@ export default defineConfig({
   
   build: {
     rollupOptions: {
+       assetsDir: 'assets',
       external: ['vue-error-boundary'],
     },
 
