@@ -188,6 +188,7 @@ const filterQuery = computed(() => {
     </div>
     <div class="btn">
       <button
+        class="pag"
         v-for="page in totalPages"
         :key="page"
         @click="changePage(page)"
@@ -388,8 +389,14 @@ input {
   .info {
     padding-block-end: 3em;
   }
+  .pag{
+    margin-bottom: 10em;
+  }
 }
 @media (max-width: 753px) {
+   .pag{
+    margin-bottom: 10em;
+  }
   .repos {
     display: grid;
     grid-template-columns: 1fr;
